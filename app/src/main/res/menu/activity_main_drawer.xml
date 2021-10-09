@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_aboutUs"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/about_us" />
+
+        <item
+            android:id="@+id/nav_contactUs"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/contact_us" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_scanner"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/scanner" />
+        <item
+            android:id="@+id/nav_language"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/language" />
+        <item
+            android:id="@+id/nav_newMember"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/become_a_member" />
+        <item
+            android:id="@+id/nav_id"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/download_id" />
+        <item
+            android:id="@+id/nav_members"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/member_list" />
+        <item
+            android:id="@+id/nav_constituency"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/up_constituency" />
+
+    </group>
+    <item android:title="Upcoming">
+        <menu>
+            <item
+                android:id="@+id/nav_ny"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Upcoming Events" />
+
+            <item
+                android:id="@+id/nav_newsArt"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/news_articles" />
+
+        </menu>
+    </item>
+</menu>

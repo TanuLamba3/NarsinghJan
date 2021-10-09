@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.narsinghjan.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_aboutUs"
+        android:name="com.example.narsinghjan.ui.aboutus.AboutUsFragment"
+        android:label="@string/about_us"
+        tools:layout="@layout/fragment_AboutUs" />
+
+    <fragment
+        android:id="@+id/nav_contactUs"
+        android:name="com.example.narsinghjan.ui.contactus.ContactUsFragment"
+        android:label="@string/contact_us"
+        tools:layout="@layout/fragment_contactus" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.narsinghjan.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/nav_scanner"
+        android:name="com.example.narsinghjan.Fragment.ScannerFragment"
+        android:label="@string/scanner"
+        tools:layout="@layout/fragment_scanner" />
+    <fragment
+        android:id="@+id/nav_language"
+        android:name="com.example.narsinghjan.Fragment.LanguageFragment"
+        android:label="@string/language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/nav_newMember"
+        android:name="com.example.narsinghjan.Fragment.BecomeMemberFragment"
+        android:label="@string/become_a_member"
+        tools:layout="@layout/fragment_become_member" />
+    <fragment
+        android:id="@+id/nav_id"
+        android:name="com.example.narsinghjan.Fragment.DownloadIdFragment"
+        android:label="@string/download_id"
+        tools:layout="@layout/fragment_download_id" />
+    <fragment
+        android:id="@+id/nav_members"
+        android:name="com.example.narsinghjan.Fragment.MemberListFragment"
+        android:label="@string/member_list"
+        tools:layout="@layout/fragment_member_list" />
+    <fragment
+        android:id="@+id/nav_constituency"
+        android:name="com.example.narsinghjan.Fragment.UpConsistencyFragment"
+        android:label="@string/up_constituency"
+        tools:layout="@layout/fragment_up_consistency" />
+
+</navigation>

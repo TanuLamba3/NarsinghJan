@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/drawable/backgroundimage.xml" value="0.24814814814814815" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/drawable/side_nav_bar.xml" value="0.24814814814814815" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_facebook.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_instagram.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_link.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_scanner_view.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_splash_screen.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_twitter.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/app_bar_main.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/content_main.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_become_member.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_contactus.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_gallery.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_home.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_language.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_language2.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_scanner.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_slideshow.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/memberslist.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/nav_header_main.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/menu/main.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
