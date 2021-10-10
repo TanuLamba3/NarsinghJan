@@ -49,9 +49,9 @@ public class GalleryFragment extends Fragment {
         list.add(new MainModel(R.drawable.memtwo,"Varun Shaurya"));
         list.add(new MainModel(R.drawable.memtwo,"Sangeeta Sharma"));
 
-        MainAdapter adapter = new MainAdapter(list , GalleryFragment.this);
+        MainAdapter adapter = new MainAdapter(list , getContext());
         binding.recyclerViewAcc.setAdapter(adapter);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         binding.recyclerViewAcc.setLayoutManager(layoutManager);
 
         //setContentView(R.layout.activity_account);

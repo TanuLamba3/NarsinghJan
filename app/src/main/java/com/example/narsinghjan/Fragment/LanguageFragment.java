@@ -1,7 +1,12 @@
 package com.example.narsinghjan.Fragment;
 
+import static android.content.Context.MODE_PRIVATE;
+
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 
@@ -15,10 +20,13 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.narsinghjan.MainActivity;
 import com.example.narsinghjan.R;
 import com.example.narsinghjan.databinding.FragmentHomeBinding;
 import com.example.narsinghjan.databinding.FragmentLanguageBinding;
 import com.example.narsinghjan.ui.LocalHelper;
+
+import java.util.Locale;
 
 
 public class LanguageFragment extends Fragment {
@@ -43,38 +51,48 @@ public class LanguageFragment extends Fragment {
         show_lan_dialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String[] Language = {"English","हिंदी"};
-
-                final AlertDialog.Builder builder = new AlertDialog.Builder(LanguageFragment.this);
-
-                builder.setTitle("SELECT A LANGUAGE")
-                        .setSingleChoiceItems(Language, lang_selected, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                dialog_language.setText(Language[i]);
-
-                                if(Language[i].equals("ENGLISH"))
-                                {
-                                    context = LocalHelper.setLocale(LanguageFragment.this,"en");
-                                    resources = context.getResources();
-
-                                    lang_selected = 0;
-                                }
-                                if(Language[i].equals("हिंदी"))
-                                {
-
-                                }
-                            }
-                        })
-                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                dialogInterface.dismiss();
-                            }
-                        });
-                builder.create().show();
+                showChangeLanguageDialog();
             }
         });
         return root;
     }
+    private void showChangeLanguageDialog() {
+        final String[] listItems = {"English","हिंदी"};
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(getContext());
+        mBuilder.setTitle("Choose Language...");
+        mBuilder.setSingleChoiceItems(listItems,-1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                if(i == 1){
+                    setLocale("hi");
+                    getActivity().recreate();
+                }
+                else if(i == 0){
+                    setLocale("en");
+                    getActivity().recreate();
+                }
+                dialogInterface.dismiss();
+            }
+        });
+        AlertDialog mDialog = mBuilder.create();
+        mDialog.show();
+
+    }
+    private void setLocale(String lang){
+        Locale locale = new Locale(lang);
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale=locale;
+        getContext().getResources().updateConfiguration(config,getContext().getResources().getDisplayMetrics());
+        SharedPreferences.Editor editor = getContext().getSharedPreferences("Settings",MODE_PRIVATE).edit();
+        editor.putString("My_Lang",lang);
+        editor.apply();
+
+    }
+    public void loadLocale(){
+        SharedPreferences prefs = getContext().getSharedPreferences("Settings", MODE_PRIVATE);
+        String language = prefs.getString("My_Lang","");
+        setLocale(language);
+    }
+
 }
