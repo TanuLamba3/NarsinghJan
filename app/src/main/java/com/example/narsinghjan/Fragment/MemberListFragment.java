@@ -3,64 +3,93 @@ package com.example.narsinghjan.Fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
+import com.example.narsinghjan.Adapters.MainAdapter;
+import com.example.narsinghjan.Adapters.MainModel;
 import com.example.narsinghjan.R;
+import com.example.narsinghjan.databinding.FragmentGalleryBinding;
+import com.example.narsinghjan.databinding.FragmentMemberListBinding;
+import com.example.narsinghjan.ui.gallery.GalleryViewModel;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link MemberListFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class MemberListFragment extends Fragment {
+    //private ArrayList<MainModel> list = new ArrayList<>();
+//implements MainAdapter.viewholder
+    private ArrayList<MainModel> list = new ArrayList<>();
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public MemberListFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment MemberListFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static MemberListFragment newInstance(String param1, String param2) {
-        MemberListFragment fragment = new MemberListFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    private GalleryViewModel slideshowViewModel;
+    private FragmentMemberListBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+         View view = inflater.inflate(R.layout.fragment_member_list,container,false);
+//         initRecyclerView(view);
+//         buildListData();
+
+        binding = FragmentMemberListBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
+
+//        ArrayList<MainModel> list = new ArrayList<>();
+//        list.add(new MainModel(R.drawable.memtwo,"Vijender singh verma"));
+//        list.add(new MainModel(R.drawable.memtwo,"Rajni Pareshar"));
+//        list.add(new MainModel(R.drawable.memtwo,"Dinesh Kumar Gupta"));
+//        list.add(new MainModel(R.drawable.memtwo,"Bhagwatacharya vishal krishna sharma"));
+//        list.add(new MainModel(R.drawable.memtwo,"Ashwani kumar sharma"));
+//        list.add(new MainModel(R.drawable.memtwo,"ADV. Abhishek Bhatt"));
+//        list.add(new MainModel(R.drawable.memtwo,"Deepak Sharma"));
+//        list.add(new MainModel(R.drawable.memtwo,"Mr. Vinod kumar"));
+//        list.add(new MainModel(R.drawable.memtwo,"Hiresh singh"));
+//        list.add(new MainModel(R.drawable.memtwo,"Aditya Chaturvedi"));
+//        list.add(new MainModel(R.drawable.memtwo,"Varun Shaurya"));
+//        list.add(new MainModel(R.drawable.memtwo,"Sangeeta Sharma"));
+
+//        MainAdapter adapter = new MainAdapter(list , GalleryFragment.this);
+//        binding.recyclerViewAcc.setAdapter(adapter);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+//        binding.recyclerViewAcc.setLayoutManager(layoutManager);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_member_list, container, false);
+        return view;
+    }
+
+//    private void initRecyclerView(View view){
+//        RecyclerView recyclerView = view.findViewById(R.id.recyclerViewAcc);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+//
+//        recyclerView.setLayoutManager(layoutManager);
+//        MainAdapter adapter = new MainAdapter(list,this);
+//        recyclerView.setAdapter(adapter);
+//    }
+//    private void buildListData(){
+//        list.add(new MainModel(R.drawable.memtwo,"Vijender singh verma"));
+//        list.add(new MainModel(R.drawable.memtwo,"Rajni Pareshar"));
+//        list.add(new MainModel(R.drawable.memtwo,"Dinesh Kumar Gupta"));
+//        list.add(new MainModel(R.drawable.memtwo,"Bhagwatacharya vishal krishna sharma"));
+//        list.add(new MainModel(R.drawable.memtwo,"Ashwani kumar sharma"));
+//        list.add(new MainModel(R.drawable.memtwo,"ADV. Abhishek Bhatt"));
+//        list.add(new MainModel(R.drawable.memtwo,"Deepak Sharma"));
+//        list.add(new MainModel(R.drawable.memtwo,"Mr. Vinod kumar"));
+//        list.add(new MainModel(R.drawable.memtwo,"Hiresh singh"));
+//        list.add(new MainModel(R.drawable.memtwo,"Aditya Chaturvedi"));
+//        list.add(new MainModel(R.drawable.memtwo,"Varun Shaurya"));
+//        list.add(new MainModel(R.drawable.memtwo,"Sangeeta Sharma"));
+//    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
 }

@@ -44,6 +44,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.viewholder>{
         return list.size();
     }
 
+
     public class viewholder extends RecyclerView.ViewHolder {
         ImageView log;
         TextView Title;
