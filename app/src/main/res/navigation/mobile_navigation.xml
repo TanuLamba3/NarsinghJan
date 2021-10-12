@@ -14,7 +14,7 @@
         android:id="@+id/nav_aboutUs"
         android:name="com.example.narsinghjan.ui.aboutus.AboutUsFragment"
         android:label="@string/about_us"
-        tools:layout="@layout/fragment_AboutUs" />
+        tools:layout="@layout/fragment_aboutus" />
 
     <fragment
         android:id="@+id/nav_contactUs"

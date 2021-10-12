@@ -1,6 +1,7 @@
 package com.example.narsinghjan;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -9,8 +10,11 @@ import android.widget.ImageView;
 
 public class ImageAdapter extends BaseAdapter {
 
-    private Context context;
-    public int[] imageArray = {
+    Context context;
+
+
+
+        public int[] imageArray = {
             R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four,
             R.drawable.five,R.drawable.six,R.drawable.seven,R.drawable.eight,
             R.drawable.nine,R.drawable.ten,R.drawable.eleven,R.drawable.twelve,
@@ -19,6 +23,7 @@ public class ImageAdapter extends BaseAdapter {
     };
 
     public ImageAdapter(Context context) {
+
         this.context = context;
     }
 

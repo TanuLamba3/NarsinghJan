@@ -3,17 +3,23 @@
     package="com.example.narsinghjan">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NarsinghJan">
+        <activity
+            android:name=".upContActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".FullImageActivity"
+            android:exported="true" />
         <activity
             android:name=".scannerView"
             android:exported="true" />

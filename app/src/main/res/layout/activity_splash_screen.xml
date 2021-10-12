@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SplashScreen"
+    android:background="#D71A22">
+
 
     <ViewFlipper
         android:layout_width="match_parent"
@@ -27,5 +31,4 @@
 
 
     </ViewFlipper>
-
 </LinearLayout>

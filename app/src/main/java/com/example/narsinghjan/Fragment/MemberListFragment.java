@@ -35,8 +35,8 @@ public class MemberListFragment extends Fragment {
                              Bundle savedInstanceState) {
 
          View view = inflater.inflate(R.layout.fragment_member_list,container,false);
-//         initRecyclerView(view);
-//         buildListData();
+         initRecyclerView(view);
+         buildListData();
 
         binding = FragmentMemberListBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
@@ -64,28 +64,28 @@ public class MemberListFragment extends Fragment {
         return view;
     }
 
-//    private void initRecyclerView(View view){
-//        RecyclerView recyclerView = view.findViewById(R.id.recyclerViewAcc);
-//        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
-//
-//        recyclerView.setLayoutManager(layoutManager);
-//        MainAdapter adapter = new MainAdapter(list,this);
-//        recyclerView.setAdapter(adapter);
-//    }
-//    private void buildListData(){
-//        list.add(new MainModel(R.drawable.memtwo,"Vijender singh verma"));
-//        list.add(new MainModel(R.drawable.memtwo,"Rajni Pareshar"));
-//        list.add(new MainModel(R.drawable.memtwo,"Dinesh Kumar Gupta"));
-//        list.add(new MainModel(R.drawable.memtwo,"Bhagwatacharya vishal krishna sharma"));
-//        list.add(new MainModel(R.drawable.memtwo,"Ashwani kumar sharma"));
-//        list.add(new MainModel(R.drawable.memtwo,"ADV. Abhishek Bhatt"));
-//        list.add(new MainModel(R.drawable.memtwo,"Deepak Sharma"));
-//        list.add(new MainModel(R.drawable.memtwo,"Mr. Vinod kumar"));
-//        list.add(new MainModel(R.drawable.memtwo,"Hiresh singh"));
-//        list.add(new MainModel(R.drawable.memtwo,"Aditya Chaturvedi"));
-//        list.add(new MainModel(R.drawable.memtwo,"Varun Shaurya"));
-//        list.add(new MainModel(R.drawable.memtwo,"Sangeeta Sharma"));
-//    }
+    private void initRecyclerView(View view){
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerViewAcc);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+
+        recyclerView.setLayoutManager(layoutManager);
+        MainAdapter adapter = new MainAdapter(list,getContext());
+        recyclerView.setAdapter(adapter);
+    }
+    private void buildListData(){
+        list.add(new MainModel(R.drawable.memtwo,"Vijender singh verma"));
+        list.add(new MainModel(R.drawable.memtwo,"Rajni Pareshar"));
+        list.add(new MainModel(R.drawable.memtwo,"Dinesh Kumar Gupta"));
+        list.add(new MainModel(R.drawable.memfour,"Bhagwatacharya vishal krishna sharma"));
+        list.add(new MainModel(R.drawable.memfive,"Ashwani kumar sharma"));
+        list.add(new MainModel(R.drawable.memsix,"ADV. Abhishek Bhatt"));
+        list.add(new MainModel(R.drawable.memseven,"Deepak Sharma"));
+        list.add(new MainModel(R.drawable.memtwo,"Mr. Vinod kumar"));
+        list.add(new MainModel(R.drawable.memtwo,"Hiresh singh"));
+        list.add(new MainModel(R.drawable.memtwo,"Aditya Chaturvedi"));
+        list.add(new MainModel(R.drawable.memtwo,"Varun Shaurya"));
+        list.add(new MainModel(R.drawable.memtwo,"Sangeeta Sharma"));
+    }
 
     @Override
     public void onDestroyView() {

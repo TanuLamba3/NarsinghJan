@@ -10,25 +10,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="40dp"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/facebook"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_weight="1"
             android:src="@drawable/facebook" />
 
         <ImageView
             android:id="@+id/instagram"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_weight="1"
             android:src="@drawable/instagram" />
 
         <ImageView
             android:id="@+id/twitter"
-            android:layout_width="60dp"
+            android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_weight="1"
             android:src="@drawable/twitter" />
