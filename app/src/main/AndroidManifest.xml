@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NarsinghJan">
         <activity
+            android:name=".downloadActivity"
+            android:exported="true" />
+        <activity
             android:name=".upContActivity2"
             android:exported="true" />
         <activity

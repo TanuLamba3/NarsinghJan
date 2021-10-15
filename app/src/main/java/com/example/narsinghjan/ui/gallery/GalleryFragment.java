@@ -45,7 +45,7 @@ public class GalleryFragment extends Fragment {
         gridView = view.findViewById(R.id.grid_view);
 
 
-        //gridView.setAdapter(new ImageAdapter(getContext()));
+        gridView.setAdapter(new ImageAdapter(getContext()));
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -53,6 +53,7 @@ public class GalleryFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), FullImageActivity.class);
                 intent.putExtra("l", i);
                 startActivity(intent);
+
             }
         });
 
