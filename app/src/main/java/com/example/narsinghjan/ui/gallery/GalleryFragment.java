@@ -15,9 +15,13 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
+import com.example.narsinghjan.Adapters.GalleryRecyclerViewAdapter;
 import com.example.narsinghjan.Adapters.MainAdapter;
 import com.example.narsinghjan.Adapters.MainModel;
+import com.example.narsinghjan.Adapters.images;
 import com.example.narsinghjan.FullImageActivity;
 import com.example.narsinghjan.ImageAdapter;
 import com.example.narsinghjan.R;
@@ -25,6 +29,7 @@ import com.example.narsinghjan.databinding.FragmentGalleryBinding;
 import com.example.narsinghjan.databinding.FragmentGalleryBinding;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class GalleryFragment extends Fragment {
     GridView gridView;
@@ -40,40 +45,36 @@ public class GalleryFragment extends Fragment {
 
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_gallery, container, false);
 
-        gridView = view.findViewById(R.id.grid_view);
-
-
-        gridView.setAdapter(new ImageAdapter(getContext()));
-
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getActivity(), FullImageActivity.class);
-                intent.putExtra("l", i);
-                startActivity(intent);
-
-            }
-        });
-
-
-
-//        ImageAdapter adapter = new ImageAdapter(getContext());
-//        binding.gridView.setAdapter(adapter);
-//        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
-        //binding.gridView.setLayoutManager(layoutManager);
-
-        //setContentView(R.layout.activity_account);
-
-
-//        final TextView textView = binding.textSlideshow;
-//        GalleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-//            @Override
-//            public void onChanged(@Nullable String s) {
-//                textView.setText(s);
-//            }
-//        });
+        RecyclerView galleryRecyclerView =view.findViewById(R.id.galleryRecyclerView);
+        galleryRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
+        List<images> imagesList=new ArrayList<>();
+        imagesList.add(new images(R.drawable.backgroundimage));
+        imagesList.add(new images(R.drawable.eight));
+        imagesList.add(new images(R.drawable.eighteen));
+        imagesList.add(new images(R.drawable.eleven));
+        imagesList.add(new images(R.drawable.facebook));
+        imagesList.add(new images(R.drawable.fifteen));
+        imagesList.add(new images(R.drawable.five));
+        imagesList.add(new images(R.drawable.four));
+        imagesList.add(new images(R.drawable.backgroundimage));
+        imagesList.add(new images(R.drawable.eight));
+        imagesList.add(new images(R.drawable.eighteen));
+        imagesList.add(new images(R.drawable.eleven));
+        imagesList.add(new images(R.drawable.facebook));
+        imagesList.add(new images(R.drawable.fifteen));
+        imagesList.add(new images(R.drawable.five));
+        imagesList.add(new images(R.drawable.four));
+        imagesList.add(new images(R.drawable.backgroundimage));
+        imagesList.add(new images(R.drawable.eight));
+        imagesList.add(new images(R.drawable.eighteen));
+        imagesList.add(new images(R.drawable.eleven));
+        imagesList.add(new images(R.drawable.facebook));
+        imagesList.add(new images(R.drawable.fifteen));
+        imagesList.add(new images(R.drawable.five));
+        imagesList.add(new images(R.drawable.four));
+        galleryRecyclerView.setAdapter(new GalleryRecyclerViewAdapter(imagesList));
         return view;
     }
 
