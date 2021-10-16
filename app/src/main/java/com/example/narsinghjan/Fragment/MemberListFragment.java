@@ -73,18 +73,18 @@ public class MemberListFragment extends Fragment {
         recyclerView.setAdapter(adapter);
     }
     private void buildListData(){
-        list.add(new MainModel(R.drawable.memtwo,"Vijender singh verma"));
+        list.add(new MainModel(R.drawable.memone,"Vijender singh verma"));
         list.add(new MainModel(R.drawable.memtwo,"Rajni Pareshar"));
-        list.add(new MainModel(R.drawable.memtwo,"Dinesh Kumar Gupta"));
+        list.add(new MainModel(R.drawable.memthree,"Dinesh Kumar Gupta"));
         list.add(new MainModel(R.drawable.memfour,"Bhagwatacharya vishal krishna sharma"));
         list.add(new MainModel(R.drawable.memfive,"Ashwani kumar sharma"));
         list.add(new MainModel(R.drawable.memsix,"ADV. Abhishek Bhatt"));
         list.add(new MainModel(R.drawable.memseven,"Deepak Sharma"));
-        list.add(new MainModel(R.drawable.memtwo,"Mr. Vinod kumar"));
-        list.add(new MainModel(R.drawable.memtwo,"Hiresh singh"));
-        list.add(new MainModel(R.drawable.memtwo,"Aditya Chaturvedi"));
-        list.add(new MainModel(R.drawable.memtwo,"Varun Shaurya"));
-        list.add(new MainModel(R.drawable.memtwo,"Sangeeta Sharma"));
+        list.add(new MainModel(R.drawable.memeight,"Mr. Vinod kumar"));
+        list.add(new MainModel(R.drawable.memnine,"Hiresh singh"));
+        list.add(new MainModel(R.drawable.memten,"Aditya Chaturvedi"));
+        list.add(new MainModel(R.drawable.memeleven,"Varun Shaurya"));
+        list.add(new MainModel(R.drawable.memtwelve,"Sangeeta Sharma"));
     }
 
     @Override

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,11 +32,17 @@ public class HomeFragment extends Fragment {
         moreTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Bundle bundle = new Bundle();
-                bundle.putString("key",moreTxt.getText().toString());
                 AboutUsFragment aboutUsFragment = new AboutUsFragment();
-                aboutUsFragment.setArguments(bundle);
-                getFragmentManager().beginTransaction().replace(R.id.moreTxt,aboutUsFragment).commit();
+                FragmentManager manager = getFragmentManager();
+                manager.beginTransaction()
+                        .replace(R.id.moreTxt,aboutUsFragment,aboutUsFragment.getTag())
+                        .commit();
+
+//                Bundle bundle = new Bundle();
+//                bundle.putString("key",moreTxt.getText().toString());
+//                AboutUsFragment aboutUsFragment = new AboutUsFragment();
+//                aboutUsFragment.setArguments(bundle);
+//                getFragmentManager().beginTransaction().replace(R.id.moreTxt,aboutUsFragment).commit();
             }
         });
 
