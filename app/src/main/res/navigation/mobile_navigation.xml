@@ -57,5 +57,20 @@
         android:name="com.example.narsinghjan.Fragment.UpConsistencyFragment"
         android:label="@string/up_constituency"
         tools:layout="@layout/fragment_up_consistency" />
+    <fragment
+        android:id="@+id/nav_ny"
+        android:name="com.example.narsinghjan.Fragment.UpcomingFragment"
+        android:label="@string/upcoming_events"
+        tools:layout="@layout/fragment_upcoming" />
+    <fragment
+        android:id="@+id/nav_newsArt"
+        android:name="com.example.narsinghjan.Fragment.NewsArtFragment"
+        android:label="@string/news_articles"
+        tools:layout="@layout/fragment_news_art" />
+    <fragment
+        android:id="@+id/nav_donation"
+        android:name="com.example.narsinghjan.Fragment.DonationFragment"
+        android:label="@string/donation"
+        tools:layout="@layout/fragment_donation" />
 
 </navigation>

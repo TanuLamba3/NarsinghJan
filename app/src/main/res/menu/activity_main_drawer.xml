@@ -11,7 +11,6 @@
             android:id="@+id/nav_aboutUs"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/about_us" />
-
         <item
             android:id="@+id/nav_contactUs"
             android:icon="@drawable/ic_menu_gallery"
@@ -51,12 +50,16 @@
             <item
                 android:id="@+id/nav_ny"
                 android:icon="@drawable/ic_menu_slideshow"
-                android:title="Upcoming Events" />
+                android:title="@string/upcoming_events" />
 
             <item
                 android:id="@+id/nav_newsArt"
                 android:icon="@drawable/ic_menu_slideshow"
                 android:title="@string/news_articles" />
+            <item
+                android:id="@+id/nav_donation"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/donation" />
 
         </menu>
     </item>

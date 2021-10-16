@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp"
-    android:background="#FDEAEA"
     tools:context=".Fragment.BecomeMemberFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="15dp"
+        android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
@@ -48,23 +48,25 @@
             android:textSize="16sp"
             android:background="@color/white"/>
 
+
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Aadhar No."
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="Email Address"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginBottom="8dp"/>
+            android:textColor="@color/black"/>
 
         <EditText
-            android:id="@+id/AadharNum"
+            android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Enter your Id Number"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your Email"
             android:padding="8dp"
             android:textColor="@color/black"
             android:layout_marginBottom="8dp"
@@ -73,22 +75,21 @@
             android:background="@color/white"/>
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Constituency"
+            android:text="Phone number"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginBottom="8dp"/>
+            android:textColor="@color/black"/>
 
         <EditText
-            android:id="@+id/constituency"
+            android:id="@+id/editTextPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Enter "
+            android:inputType="phone"
+            android:hint="Enter your mobile number"
             android:padding="8dp"
             android:textColor="@color/black"
             android:layout_marginBottom="8dp"
@@ -96,84 +97,30 @@
             android:textSize="16sp"
             android:background="@color/white"/>
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="District"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginBottom="8dp"/>
 
-        <EditText
-            android:id="@+id/district"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Enter District"
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:layout_marginBottom="8dp"
-            android:textStyle="italic"
-            android:textSize="16sp"
-            android:background="@color/white" />
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="PINCODE"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginBottom="8dp"/>
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textInput1"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">-->
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/ac_text_view1"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Constituency"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:background="@color/white"/>-->
 
-        <EditText
-            android:id="@+id/pinCode"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPostalAddress"
-            android:hint="Enter Zipcode/Pincode/Postalcode"
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:layout_marginBottom="8dp"
-            android:textStyle="italic"
-            android:textSize="16sp"
-            android:background="@color/white"/>
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="REMARKS"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginBottom="8dp"/>
-
-        <EditText
-            android:id="@+id/remark"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Type...."
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:layout_marginBottom="8dp"
-            android:textStyle="italic"
-            android:textSize="16sp"
-            android:background="@color/white" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit"
+            android:text="Next"
             android:layout_marginTop="15dp"
             android:backgroundTint="@color/black" />
+
     </LinearLayout>
 </RelativeLayout>
