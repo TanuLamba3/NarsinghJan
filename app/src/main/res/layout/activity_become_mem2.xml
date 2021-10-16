@@ -21,15 +21,16 @@
         android:id="@+id/AadharNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Enter your Id Number"
+        android:inputType="textPersonName"
         android:padding="8dp"
         android:textColor="@color/black"
-        android:layout_marginBottom="8dp"
-        android:textStyle="italic"
         android:textSize="16sp"
-        android:background="@color/white"/>
+        android:textStyle="italic"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView5"
@@ -45,15 +46,16 @@
         android:id="@+id/constituency"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Enter "
+        android:inputType="textPersonName"
         android:padding="8dp"
         android:textColor="@color/black"
-        android:layout_marginBottom="8dp"
-        android:textStyle="italic"
         android:textSize="16sp"
-        android:background="@color/white"/>
+        android:textStyle="italic"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView6"
@@ -69,15 +71,16 @@
         android:id="@+id/district"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Enter District"
+        android:inputType="textPersonName"
         android:padding="8dp"
         android:textColor="@color/black"
-        android:layout_marginBottom="8dp"
-        android:textStyle="italic"
         android:textSize="16sp"
-        android:background="@color/white" />
+        android:textStyle="italic"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView7"
@@ -93,15 +96,16 @@
         android:id="@+id/pinCode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
         android:ems="10"
-        android:inputType="textPostalAddress"
         android:hint="Enter Zipcode/Pincode/Postalcode"
+        android:inputType="textPostalAddress"
         android:padding="8dp"
         android:textColor="@color/black"
-        android:layout_marginBottom="8dp"
-        android:textStyle="italic"
         android:textSize="16sp"
-        android:background="@color/white"/>
+        android:textStyle="italic"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView8"
@@ -117,14 +121,15 @@
         android:id="@+id/remark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Type...."
+        android:inputType="textPersonName"
         android:padding="8dp"
         android:textColor="@color/black"
-        android:layout_marginBottom="8dp"
-        android:textStyle="italic"
         android:textSize="16sp"
-        android:background="@color/white" />
+        android:textStyle="italic"
+        tools:ignore="TouchTargetSizeCheck" />
 
 </LinearLayout>
