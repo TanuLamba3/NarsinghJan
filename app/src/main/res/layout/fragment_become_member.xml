@@ -1,52 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:orientation="vertical"
     tools:context=".Fragment.BecomeMemberFragment">
 
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="#d71a22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="197dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="44dp"
+        android:src="@drawable/narsinghlog"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.196" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anton"
+        android:text="Want to Become a Member ?"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="Fill your Details.."
+        android:textColor="@color/white"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.292" />
+
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="15dp"
+        android:layout_margin="25dp"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="15dp">
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="110dp"
-            android:layout_height="110dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="70dp"
-            android:src="@drawable/narsinghlog" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
             android:layout_marginBottom="8dp"
             android:text="Name"
-            android:textSize="18sp"
-            android:textStyle="bold"
+            android:padding="15dp"
             android:textColor="@color/black"
-            />
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_border"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="Enter your Name"
-            android:padding="8dp"
+            android:inputType="textPersonName"
+            android:padding="20dp"
             android:textColor="@color/black"
-            android:layout_marginBottom="8dp"
-            android:textStyle="italic"
-            android:textSize="16sp"
-            android:background="@color/white"/>
+            android:textSize="18sp"
+            android:textStyle="italic" />
 
 
         <TextView
@@ -56,71 +116,76 @@
             android:layout_marginTop="4dp"
             android:layout_marginBottom="8dp"
             android:text="Email Address"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_border"
             android:ems="10"
-            android:inputType="textEmailAddress"
             android:hint="Enter your Email"
-            android:padding="8dp"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
             android:textColor="@color/black"
-            android:layout_marginBottom="8dp"
-            android:textStyle="italic"
             android:textSize="16sp"
-            android:background="@color/white"/>
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Phone number"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_border"
             android:ems="10"
-            android:inputType="phone"
             android:hint="Enter your mobile number"
-            android:padding="8dp"
+            android:inputType="phone"
+            android:padding="20dp"
             android:textColor="@color/black"
-            android:layout_marginBottom="8dp"
-            android:textStyle="italic"
             android:textSize="16sp"
-            android:background="@color/white"/>
+            android:textStyle="italic" />
 
 
-
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/textInput1"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">-->
-<!--        <AutoCompleteTextView-->
-<!--            android:id="@+id/ac_text_view1"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="Constituency"-->
-<!--            android:layout_marginTop="8dp"-->
-<!--            android:background="@color/white"/>-->
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/textInput1"-->
+        <!--            android:layout_width="200dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">-->
+        <!--        <AutoCompleteTextView-->
+        <!--            android:id="@+id/ac_text_view1"-->
+        <!--            android:layout_width="200dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:text="Constituency"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:background="@color/white"/>-->
 
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Next"
             android:layout_marginTop="15dp"
-            android:backgroundTint="@color/black" />
+            android:backgroundTint="@color/black"
+            android:text="Next" />
 
     </LinearLayout>
-</RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
