@@ -3,16 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Aryan Sharma/NarsinghJan/app/src/main/res/layout/activity_become_mem2.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/Aryan Sharma/NarsinghJan/app/src/main/res/layout/article_layout.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/Aryan Sharma/NarsinghJan/app/src/main/res/layout/fragment_gallery.xml" value="0.20742753623188406" />
-        <entry key="..\:/Users/Aryan Sharma/NarsinghJan/app/src/main/res/layout/fragment_news_art.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/Aryan Sharma/NarsinghJan/app/src/main/res/layout/memberslist.xml" value="0.20742753623188406" />
-        <entry key="..\:/Users/Aryan Sharma/NarsinghJan/app/src/main/res/layout/post_item_container.xml" value="0.20742753623188406" />
-        <entry key="..\:/Users/Aryan Sharma/NarsinghJan/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.290625" />
-        <entry key="..\:/Users/Aryan Sharma/NarsinghJan/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.290625" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/drawable/backgroundimage.xml" value="0.24814814814814815" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/drawable/side_nav_bar.xml" value="0.24814814814814815" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_become_mem2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_become_mem3.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_download.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_facebook.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_full_image.xml" value="0.16666666666666666" />
@@ -30,18 +24,20 @@
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_contactus.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_download_id.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_gallery.xml" value="0.12360688956433637" />
-        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_home.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_language.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_language2.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_member_list.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_scanner.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_slideshow.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_up_consistency.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_upcoming.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/memberslist.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/nav_header_main.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/row_recycler.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/menu/main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14635416666666667" />
       </map>
     </option>
   </component>

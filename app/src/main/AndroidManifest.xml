@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NarsinghJan">
         <activity
+            android:name=".BecomeMem3"
+            android:exported="true" />
+        <activity
             android:name=".BecomeMem2"
             android:exported="true" />
         <activity

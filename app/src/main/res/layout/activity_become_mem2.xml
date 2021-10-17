@@ -5,7 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BecomeMem2"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/narsinghlog" />
 
     <TextView
         android:id="@+id/textView4"
@@ -36,32 +46,25 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Constituency"
+        android:text="Date Of Birth"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginBottom="8dp"/>
 
     <EditText
-        android:id="@+id/constituency"
+        android:id="@+id/editTextDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@color/white"
         android:ems="10"
-        android:hint="Enter "
-        android:inputType="textPersonName"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        tools:ignore="TouchTargetSizeCheck" />
+        android:hint="mm/dd/yyyy"
+        android:inputType="date" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="District"
+        android:text="Permanent Address"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -74,7 +77,7 @@
         android:layout_marginBottom="8dp"
         android:background="@color/white"
         android:ems="10"
-        android:hint="Enter District"
+        android:hint="Enter Permanent Address"
         android:inputType="textPersonName"
         android:padding="8dp"
         android:textColor="@color/black"
@@ -86,7 +89,7 @@
         android:id="@+id/textView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PINCODE"
+        android:text="Temporary Address"
         android:textSize="18sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -99,7 +102,7 @@
         android:layout_marginBottom="8dp"
         android:background="@color/white"
         android:ems="10"
-        android:hint="Enter Zipcode/Pincode/Postalcode"
+        android:hint="Enter Temporary Address"
         android:inputType="textPostalAddress"
         android:padding="8dp"
         android:textColor="@color/black"
@@ -107,29 +110,30 @@
         android:textStyle="italic"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <TextView
-        android:id="@+id/textView8"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="REMARKS"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="8dp"/>
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/remark"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:hint="Type...."
-        android:inputType="textPersonName"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/black"
+            android:text="Previous" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/black"
+            android:text="Next" />
+    </LinearLayout>
+
 
 </LinearLayout>

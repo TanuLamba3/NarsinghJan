@@ -66,6 +66,9 @@
  common education policy for all.
 
  uniform civil court .etc.</string>
+    <string name="upload">Upload Aadhar Card or Driving
+    <br>License or voter id Card or</br>
+    <br>Passport</br></string>
     <string name="donation">Donation</string>
     <string name="upcoming_events">Upcoming Events</string>
 </resources>
