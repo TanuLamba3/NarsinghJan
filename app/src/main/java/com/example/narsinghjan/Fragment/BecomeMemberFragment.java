@@ -29,12 +29,12 @@ public class BecomeMemberFragment extends Fragment {
         binding = FragmentBecomeMemberBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         // Inflate the layout for this fragment
-        EditText name=root.findViewById(R.id.Name);
-        EditText email=root.findViewById(R.id.EmailAddress);
-        EditText phone=root.findViewById(R.id.Phone);
-        BecomeMem3.p.setName(name.getText().toString());
-        BecomeMem3.p.setEmail(email.getText().toString());
-        BecomeMem3.p.setPhone(phone.getText().toString());
+//        EditText name=root.findViewById(R.id.Name);
+//        EditText email=root.findViewById(R.id.EmailAddress);
+//        EditText phone=root.findViewById(R.id.Phone);
+//        BecomeMem3.p.setName(name.getText().toString());
+//        BecomeMem3.p.setEmail(email.getText().toString());
+//        BecomeMem3.p.setPhone(phone.getText().toString());
         return root;
     }
 }

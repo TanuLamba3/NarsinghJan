@@ -53,7 +53,11 @@ public class BecomeMem3 extends AppCompatActivity {
         txtUpload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                uploadDocument();
+//                uploadDocument();
+                Intent chooseFile = new Intent(Intent.ACTION_GET_CONTENT);
+                chooseFile.setType("application/pdf");
+                chooseFile = Intent.createChooser(chooseFile,"choose a file");
+                startActivityForResult(chooseFile, REQ_PDF);
             }
         });
 
@@ -77,9 +81,9 @@ public class BecomeMem3 extends AppCompatActivity {
         });
     }
 
-    private void uploadDocument() {
-
-    }
+//    private void uploadDocument() {
+//
+//    }
 
     private void hook() {
         Submit=findViewById(R.id.Submit);
