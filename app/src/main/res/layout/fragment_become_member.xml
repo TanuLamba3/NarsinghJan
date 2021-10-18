@@ -4,126 +4,196 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:orientation="vertical"
     tools:context=".Fragment.BecomeMemberFragment">
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="15dp"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="#D71A22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/ic_wave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="70dp"
-            android:src="@drawable/narsinghlog" />
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/narsinghlog"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintVertical_bias="0.245" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="8dp"
-            android:text="Name"
-            android:textSize="18sp"
+            android:layout_marginBottom="56dp"
+            android:fontFamily="@font/anton"
+            android:text="Want to Become a member ?"
+            android:textColor="@color/white"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            />
-
-        <EditText
-            android:id="@+id/Name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="Enter your Name"
-            android:inputType="textPersonName"
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            tools:ignore="TouchTargetSizeCheck" />
-
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toStartOf="@+id/view" />
 
         <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="8dp"
-            android:text="Email Address"
+            android:fontFamily="@font/anton"
+            android:text="Fill Your Details.."
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/black"/>
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.677"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.394" />
 
-        <EditText
-            android:id="@+id/EmailAddress"
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="Enter your Email"
-            android:inputType="textEmailAddress"
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            tools:ignore="TouchTargetSizeCheck" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Phone number"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-
-        <EditText
-            android:id="@+id/Phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@color/white"
-            android:ems="10"
-            android:hint="Enter your mobile number"
-            android:inputType="phone"
-            android:padding="8dp"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="italic"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:gravity="center"
+            android:layout_marginTop="290dp"
+            android:orientation="vertical">
 
 
 
-<!--        <com.google.android.material.textfield.TextInputLayout-->
-<!--            android:id="@+id/textInput1"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">-->
-<!--        <AutoCompleteTextView-->
-<!--            android:id="@+id/ac_text_view1"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_weight="1"-->
-<!--            android:text="Constituency"-->
-<!--            android:layout_marginTop="8dp"-->
-<!--            android:background="@color/white"/>-->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:text="Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:hint="Enter your Name"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck" />
 
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Next"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="@color/black" />
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:text="Email Address"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/EmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:hint="Enter your Email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone number"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/round_border"
+                android:ems="10"
+                android:hint="Enter your mobile number"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+
+            <!--        <com.google.android.material.textfield.TextInputLayout-->
+            <!--            android:id="@+id/textInput1"-->
+            <!--            android:layout_width="200dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">-->
+            <!--        <AutoCompleteTextView-->
+            <!--            android:id="@+id/ac_text_view1"-->
+            <!--            android:layout_width="200dp"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:text="Constituency"-->
+            <!--            android:layout_marginTop="8dp"-->
+            <!--            android:background="@color/white"/>-->
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/black" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
 </RelativeLayout>

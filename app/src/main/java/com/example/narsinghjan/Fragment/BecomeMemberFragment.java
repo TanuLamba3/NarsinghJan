@@ -13,19 +13,20 @@ import com.example.narsinghjan.BecomeMem2;
 import com.example.narsinghjan.BecomeMem3;
 import com.example.narsinghjan.Classes.Portfolio;
 import com.example.narsinghjan.R;
+import com.example.narsinghjan.databinding.FragmentBecomeMemberBinding;
 import com.example.narsinghjan.databinding.FragmentLanguageBinding;
 
 
 public class BecomeMemberFragment extends Fragment {
 
-    private FragmentLanguageBinding binding;
+    private FragmentBecomeMemberBinding binding;
 
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentLanguageBinding.inflate(inflater, container, false);
+        binding = FragmentBecomeMemberBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         // Inflate the layout for this fragment
         EditText name=root.findViewById(R.id.Name);
