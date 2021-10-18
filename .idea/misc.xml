@@ -7,6 +7,8 @@
         <entry key="..\:/Users/Aryan Sharma/NarsinghJan/app/src/main/res/layout/activity_become_mem3.xml" value="0.1983695652173913" />
         <entry key="..\:/Users/Aryan Sharma/NarsinghJan/app/src/main/res/layout/fragment_become_member.xml" value="0.1983695652173913" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/drawable/backgroundimage.xml" value="0.24814814814814815" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/drawable/ic_baseline_file_upload_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/drawable/round_border.xml" value="0.2703125" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/drawable/side_nav_bar.xml" value="0.24814814814814815" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_become_mem2.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_become_mem3.xml" value="0.24010416666666667" />
@@ -21,13 +23,14 @@
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_twitter.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/activity_up_cont2.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/app_bar_main.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/article_layout.xml" value="0.25226449275362317" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/content_main.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_aboutus.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_become_member.xml" value="0.17300724637681159" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_become_member.xml" value="0.136" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_contactus.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_download_id.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_gallery.xml" value="0.12360688956433637" />
-        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_language.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_language2.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_member_list.xml" value="0.16666666666666666" />
@@ -37,6 +40,7 @@
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/fragment_upcoming.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/memberslist.xml" value="0.17300724637681159" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/nav_header_main.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/post_item_container.xml" value="0.25226449275362317" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/layout/row_recycler.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/menu/activity_main_drawer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/asus/AndroidStudioProjects/NarsinghJan/app/src/main/res/menu/main.xml" value="0.25416666666666665" />

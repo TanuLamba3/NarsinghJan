@@ -85,6 +85,10 @@ public class MemberListFragment extends Fragment {
         list.add(new MainModel(R.drawable.memten,"Aditya Chaturvedi"));
         list.add(new MainModel(R.drawable.memeleven,"Varun Shaurya"));
         list.add(new MainModel(R.drawable.memtwelve,"Sangeeta Sharma"));
+        list.add(new MainModel(R.drawable.memthirteen,"a"));
+        list.add(new MainModel(R.drawable.memfourteen,"b"));
+        list.add(new MainModel(R.drawable.memfifteen,"c"));
+        list.add(new MainModel(R.drawable.memsixteen,"Atul Singh"));
     }
 
     @Override
