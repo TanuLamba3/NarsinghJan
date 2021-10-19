@@ -16,8 +16,9 @@ public class BecomeMem2 extends AppCompatActivity {
 
     EditText AadharNum,
             Date,
-            district,
-            pinCode;
+            district,state,
+            pinCode,permanentAdd;
+
     Button Next;
 
     @Override
@@ -29,9 +30,10 @@ public class BecomeMem2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 BecomeMem3.p.setAadharNum(AadharNum.getText().toString());
-                BecomeMem3.p.setDate(Date.getText().toString());
+                BecomeMem3.p.setDate(pinCode.getText().toString());
                 BecomeMem3.p.setDistrict(district.getText().toString());
-                BecomeMem3.p.setPinCode(pinCode.getText().toString());
+                BecomeMem3.p.setPinCode(state.getText().toString());
+                BecomeMem3.p.setPinCode(permanentAdd.getText().toString());
                 startActivity(new Intent(BecomeMem2.this,BecomeMem3.class));
             }
         });
@@ -39,9 +41,10 @@ public class BecomeMem2 extends AppCompatActivity {
 
     private void hook() {
         AadharNum=findViewById(R.id.AadharNum);
-        Date=findViewById(R.id.Date);
-        district=findViewById(R.id.district);
         pinCode=findViewById(R.id.pinCode);
+        district=findViewById(R.id.enter_district);
+        state=findViewById(R.id.state);
+        permanentAdd=findViewById(R.id.permanentAdd);
         Next=findViewById(R.id.Next);
     }
 }

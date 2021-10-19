@@ -63,7 +63,9 @@ public class BecomeMem3 extends AppCompatActivity {
     private String enCodedPDF;
 
     ImageView image_upload;
+    ImageView photo_upload;
     TextView txtUpload;
+    TextView txtPhotoUpload;
     Button Submit;
 
     public static Portfolio p=new Portfolio();
@@ -75,10 +77,31 @@ public class BecomeMem3 extends AppCompatActivity {
         //for upload image
         image_upload = findViewById(R.id.image_upload);
         txtUpload = findViewById(R.id.txtUpload);
+        photo_upload = findViewById(R.id.photo_upload);
+        txtPhotoUpload = findViewById(R.id.txtPhotoUpload);
 
         image_upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent chooseFile = new Intent(Intent.ACTION_GET_CONTENT);
+                chooseFile.setType("application/pdf");
+                chooseFile = Intent.createChooser(chooseFile,"choose a file");
+                startActivityForResult(chooseFile, REQ_PDF);
+            }
+        });
+        photo_upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent chooseFile = new Intent(Intent.ACTION_GET_CONTENT);
+                chooseFile.setType("application/pdf");
+                chooseFile = Intent.createChooser(chooseFile,"choose a file");
+                startActivityForResult(chooseFile, REQ_PDF);
+            }
+        });
+        txtPhotoUpload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                uploadDocument();
                 Intent chooseFile = new Intent(Intent.ACTION_GET_CONTENT);
                 chooseFile.setType("application/pdf");
                 chooseFile = Intent.createChooser(chooseFile,"choose a file");
