@@ -39,12 +39,12 @@ public class BecomeMemberFragment extends Fragment {
         Next_become_member_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                BecomeMem3.p.setName(name.getText().toString());
-                BecomeMem3.p.setEmail(email.getText().toString());
-                BecomeMem3.p.setPhone(phone.getText().toString());
-//                Intent intent = new Intent(getActivity(), BecomeMem2.class);
-//                startActivity(intent);
-                startActivity(new Intent(getActivity(),BecomeMem2.class));
+//                BecomeMem3.p.setName(name.getText().toString());
+//                BecomeMem3.p.setEmail(email.getText().toString());
+//                BecomeMem3.p.setPhone(phone.getText().toString());
+                Intent intent = new Intent(getActivity(), BecomeMem2.class);
+                startActivity(intent);
+//                startActivity(new Intent(getActivity(),BecomeMem2.class));
             }
         });
         return view;

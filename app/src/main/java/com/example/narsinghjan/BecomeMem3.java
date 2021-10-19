@@ -103,7 +103,11 @@ public class BecomeMem3 extends AppCompatActivity {
                 call.enqueue(new Callback<Portfolio>() {
                     @Override
                     public void onResponse(Call<Portfolio> call, Response<Portfolio> response) {
-                        Toast.makeText(BecomeMem3.this, "Saved ", Toast.LENGTH_SHORT).show();
+                        if (response.code()==201 || response.code()==200) {
+                            Toast.makeText(BecomeMem3.this, "Saved ", Toast.LENGTH_SHORT).show();
+                        }else {
+                            Toast.makeText(getApplicationContext(), response.code(), Toast.LENGTH_SHORT).show();
+                        }
                     }
 
                     @Override
