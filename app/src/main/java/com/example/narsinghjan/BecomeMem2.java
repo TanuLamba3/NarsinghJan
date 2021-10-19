@@ -10,15 +10,14 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.narsinghjan.Classes.Portfolio;
-import com.example.narsinghjan.databinding.FragmentLanguageBinding;
 
 public class BecomeMem2 extends AppCompatActivity {
 
     EditText AadharNum,
-            Date,
-            district,state,
-            pinCode,permanentAdd;
-
+            permanentAdd,
+            pinCode,
+            state,
+            enter_district;
     Button Next;
 
     @Override
@@ -29,21 +28,21 @@ public class BecomeMem2 extends AppCompatActivity {
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                BecomeMem3.p.setAadharNum(AadharNum.getText().toString());
-                BecomeMem3.p.setDate(pinCode.getText().toString());
-                BecomeMem3.p.setDistrict(district.getText().toString());
-                BecomeMem3.p.setPinCode(state.getText().toString());
-                BecomeMem3.p.setPinCode(permanentAdd.getText().toString());
+                BecomeMem3.p.setAadhar_no(AadharNum.getText().toString());
+                BecomeMem3.p.setPincode(Integer.parseInt(pinCode.getText().toString()));
+                BecomeMem3.p.setPermanent_address(permanentAdd.getText().toString());
+                BecomeMem3.p.setState(state.getText().toString());
+                BecomeMem3.p.setDistrict(enter_district.getText().toString());
                 startActivity(new Intent(BecomeMem2.this,BecomeMem3.class));
             }
         });
     }
 
     private void hook() {
+        enter_district=findViewById(R.id.enter_district);
+        state=findViewById(R.id.state);
         AadharNum=findViewById(R.id.AadharNum);
         pinCode=findViewById(R.id.pinCode);
-        district=findViewById(R.id.enter_district);
-        state=findViewById(R.id.state);
         permanentAdd=findViewById(R.id.permanentAdd);
         Next=findViewById(R.id.Next);
     }

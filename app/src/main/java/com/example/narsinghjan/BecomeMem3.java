@@ -121,6 +121,8 @@ public class BecomeMem3 extends AppCompatActivity {
         });
 
         hook();
+        p.setPincode(123456);
+        p.setPermanent_address("");
         Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -131,7 +133,7 @@ public class BecomeMem3 extends AppCompatActivity {
                         if (response.code()==201 || response.code()==200) {
                             Toast.makeText(BecomeMem3.this, "Saved ", Toast.LENGTH_SHORT).show();
                         }else {
-                            Toast.makeText(getApplicationContext(), response.code(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), ""+response.code(), Toast.LENGTH_SHORT).show();
                         }
                     }
 

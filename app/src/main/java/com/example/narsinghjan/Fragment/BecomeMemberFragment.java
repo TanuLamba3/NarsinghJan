@@ -35,13 +35,15 @@ public class BecomeMemberFragment extends Fragment {
         EditText name=view.findViewById(R.id.Name);
         EditText email=view.findViewById(R.id.EmailAddress);
         EditText phone=view.findViewById(R.id.Phone);
+        EditText Constituency=view.findViewById(R.id.Constituency);
         Button Next_become_member_1=view.findViewById(R.id.Next_become_member_1);
         Next_become_member_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 BecomeMem3.p.setName(name.getText().toString());
                 BecomeMem3.p.setEmail(email.getText().toString());
-                BecomeMem3.p.setPhone(phone.getText().toString());
+                BecomeMem3.p.setMobile(phone.getText().toString());
+                BecomeMem3.p.setConstituency(Constituency.getText().toString());
                 Intent intent = new Intent(getActivity(), BecomeMem2.class);
                 startActivity(intent);
 //                startActivity(new Intent(getActivity(),BecomeMem2.class));
