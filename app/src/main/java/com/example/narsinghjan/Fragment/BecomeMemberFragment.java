@@ -28,13 +28,15 @@ public class BecomeMemberFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentBecomeMemberBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+        View view = inflater.inflate(R.layout.fragment_become_member,container,false);
+
         // Inflate the layout for this fragment
-//        EditText name=root.findViewById(R.id.Name);
-//        EditText email=root.findViewById(R.id.EmailAddress);
-//        EditText phone=root.findViewById(R.id.Phone);
-//        BecomeMem3.p.setName(name.getText().toString());
-//        BecomeMem3.p.setEmail(email.getText().toString());
-//        BecomeMem3.p.setPhone(phone.getText().toString());
-        return root;
+        EditText name=view.findViewById(R.id.Name);
+        EditText email=view.findViewById(R.id.EmailAddress);
+        EditText phone=view.findViewById(R.id.Phone);
+        BecomeMem3.p.setName(name.getText().toString());
+        BecomeMem3.p.setEmail(email.getText().toString());
+        BecomeMem3.p.setPhone(phone.getText().toString());
+        return view;
     }
 }
