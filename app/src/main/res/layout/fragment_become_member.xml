@@ -81,10 +81,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="290dp"
+            android:gravity="center"
             android:orientation="vertical">
-
 
 
             <TextView
@@ -94,10 +93,9 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="8dp"
                 android:text="Name"
-                android:textSize="18sp"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                />
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/Name"
@@ -122,9 +120,9 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="8dp"
                 android:text="Email Address"
+                android:textColor="@color/black"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/EmailAddress"
@@ -146,9 +144,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Phone number"
+                android:textColor="@color/black"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/Phone"
@@ -164,7 +162,6 @@
                 android:textSize="16sp"
                 android:textStyle="italic"
                 tools:ignore="TouchTargetSizeCheck" />
-
 
 
             <!--        <com.google.android.material.textfield.TextInputLayout-->
@@ -186,10 +183,9 @@
                 android:id="@+id/Next_become_member_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Next"
                 android:layout_marginTop="15dp"
-                android:backgroundTint="@color/black" />
-
+                android:backgroundTint="@color/black"
+                android:text="Next" />
 
 
         </LinearLayout>

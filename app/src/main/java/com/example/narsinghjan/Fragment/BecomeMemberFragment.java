@@ -15,6 +15,7 @@ import com.example.narsinghjan.BecomeMem2;
 import com.example.narsinghjan.BecomeMem3;
 import com.example.narsinghjan.R;
 import com.example.narsinghjan.databinding.FragmentBecomeMemberBinding;
+import com.example.narsinghjan.upContActivity2;
 
 
 public class BecomeMemberFragment extends Fragment {
@@ -41,7 +42,9 @@ public class BecomeMemberFragment extends Fragment {
                 BecomeMem3.p.setName(name.getText().toString());
                 BecomeMem3.p.setEmail(email.getText().toString());
                 BecomeMem3.p.setPhone(phone.getText().toString());
-                startActivity(new Intent(getContext(),BecomeMem2.class));
+//                Intent intent = new Intent(getActivity(), BecomeMem2.class);
+//                startActivity(intent);
+                startActivity(new Intent(getActivity(),BecomeMem2.class));
             }
         });
         return view;
