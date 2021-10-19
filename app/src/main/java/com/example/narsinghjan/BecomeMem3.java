@@ -62,11 +62,11 @@ public class BecomeMem3 extends AppCompatActivity {
     private int REQ_PDF = 21;
     private String enCodedPDF;
 
-    public static Portfolio p;
-
     ImageView image_upload;
     TextView txtUpload;
     Button Submit;
+
+    public static Portfolio p=new Portfolio();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +75,7 @@ public class BecomeMem3 extends AppCompatActivity {
         //for upload image
         image_upload = findViewById(R.id.image_upload);
         txtUpload = findViewById(R.id.txtUpload);
+
         image_upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,6 +85,7 @@ public class BecomeMem3 extends AppCompatActivity {
                 startActivityForResult(chooseFile, REQ_PDF);
             }
         });
+
         txtUpload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -114,10 +116,6 @@ public class BecomeMem3 extends AppCompatActivity {
             }
         });
     }
-
-//    private void uploadDocument() {
-//
-//    }
 
     private void hook() {
         Submit=findViewById(R.id.Submit);
