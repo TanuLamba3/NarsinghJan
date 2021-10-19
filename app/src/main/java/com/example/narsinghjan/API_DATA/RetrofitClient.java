@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
-    public static String BASE_URL = "https://www.njpbharat.org/api/users";
+    public static String BASE_URL = "https://www.njpbharat.org/njpbharat/public/";
 
     private static Retrofit getRetrofit() {
 

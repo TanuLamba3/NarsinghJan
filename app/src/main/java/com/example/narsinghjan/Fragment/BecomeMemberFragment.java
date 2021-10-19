@@ -1,5 +1,6 @@
 package com.example.narsinghjan.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,14 +8,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.narsinghjan.BecomeMem2;
-import com.example.narsinghjan.BecomeMem3;
-import com.example.narsinghjan.Classes.Portfolio;
 import com.example.narsinghjan.R;
 import com.example.narsinghjan.databinding.FragmentBecomeMemberBinding;
-import com.example.narsinghjan.databinding.FragmentLanguageBinding;
 
 
 public class BecomeMemberFragment extends Fragment {
@@ -34,9 +33,16 @@ public class BecomeMemberFragment extends Fragment {
         EditText name=view.findViewById(R.id.Name);
         EditText email=view.findViewById(R.id.EmailAddress);
         EditText phone=view.findViewById(R.id.Phone);
-        BecomeMem3.p.setName(name.getText().toString());
-        BecomeMem3.p.setEmail(email.getText().toString());
-        BecomeMem3.p.setPhone(phone.getText().toString());
+        Button Next_become_member_1=view.findViewById(R.id.Next_become_member_1);
+        Next_become_member_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BecomeMem3.p.setName(name.getText().toString());
+                BecomeMem3.p.setEmail(email.getText().toString());
+                BecomeMem3.p.setPhone(phone.getText().toString());
+                startActivity(new Intent(getContext(),BecomeMem2.class));
+            }
+        });
         return view;
     }
 }

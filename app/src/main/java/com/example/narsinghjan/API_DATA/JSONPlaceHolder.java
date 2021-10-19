@@ -14,22 +14,9 @@ import retrofit2.http.Path;
 
 public interface JSONPlaceHolder {
 
-    @POST("users")
+    @POST("api/users")
     Call<Portfolio> postPortfolio(@Body Portfolio portfolio);
-//
-//    @GET("customer")
-//    Call<List<Portfolio>> getPortfolioData();
-//
-//    @POST("order")
-//    Call<OrderPost> postOrder(@Body OrderPost orderPost);
-//
-//    @GET("order")
-//    Call<List<OrderDetails>> getOrderData();
-//
-//    @PUT("order/{id}")
-//    Call<OrderDetails> update(@Path("id") int id,@Body OrderDetails orderDetails);
-//
-//    @DELETE("order/{id}")
-//    Call<Void> delete(@Path("id") int id);
 
+    @GET("generate-idcard/{id}")
+    Call<Void> downloadCard(@Path("id") int id);
 }

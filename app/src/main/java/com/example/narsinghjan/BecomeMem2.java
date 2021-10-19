@@ -2,6 +2,7 @@ package com.example.narsinghjan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -31,6 +32,7 @@ public class BecomeMem2 extends AppCompatActivity {
                 BecomeMem3.p.setDate(Date.getText().toString());
                 BecomeMem3.p.setDistrict(district.getText().toString());
                 BecomeMem3.p.setPinCode(pinCode.getText().toString());
+                startActivity(new Intent(BecomeMem2.this,BecomeMem3.class));
             }
         });
     }

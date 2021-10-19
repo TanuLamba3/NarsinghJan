@@ -58,7 +58,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="mm/dd/yyyy"
-        android:inputType="date" />
+        android:inputType="date"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView6"
